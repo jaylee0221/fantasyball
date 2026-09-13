@@ -1,0 +1,52 @@
+# DRAFT — not active. Only manual runs (workflow_dispatch) are enabled.
+# To turn the daily run on, uncomment `schedule`. GitHub cron is UTC and has no DST:
+#   06:00 ET = 10:00 UTC during EDT (Mar–Nov), 11:00 UTC during EST (Nov–Mar).
+#   '0 10 * * *' runs 06:00 EDT / 05:00 EST; use '0 11 * * *' for 07:00 EDT / 06:00 EST.
+# Caution: stats.nba.com often blocks or times out requests from cloud IPs (GitHub runners included).
+# Run it by hand a few times before relying on the schedule.
+name: today
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date (YYYY-MM-DD, US Eastern). Empty = today.'
+        required: false
+        default: ''
+  # schedule:
+  #   - cron: '0 10 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: today
+  cancel-in-progress: false
+
+jobs:
+  today:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install
+        run: pip install nba_api
+
+      - name: Pull today's games
+        env:
+          DATE: ${{ inputs.date }}
+        run: python tools/today.py $DATE
+
+      - name: Commit data/today.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add data/today.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "today: $(python -c "import json;print(json.load(open('data/today.json'))['meta']['date'])")"
+          git push

@@ -1,0 +1,1544 @@
+{
+ "meta": {
+  "date": "2026-04-10",
+  "season": "2025-26",
+  "built": "2026-09-13T06:16:59+00:00",
+  "source": "stats.nba.com via nba_api"
+ },
+ "games": [
+  {
+   "gameId": "0022501171",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-10T23:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612766,
+    "abbr": "CHA",
+    "name": "Charlotte Hornets",
+    "record": "43-38",
+    "score": 100
+   },
+   "away": {
+    "teamId": 1610612765,
+    "abbr": "DET",
+    "name": "Detroit Pistons",
+    "record": "59-22",
+    "score": 118
+   }
+  },
+  {
+   "gameId": "0022501172",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-10T23:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612764,
+    "abbr": "WAS",
+    "name": "Washington Wizards",
+    "record": "17-64",
+    "score": 117
+   },
+   "away": {
+    "teamId": 1610612748,
+    "abbr": "MIA",
+    "name": "Miami Heat",
+    "record": "42-39",
+    "score": 140
+   }
+  },
+  {
+   "gameId": "0022501173",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-10T23:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612737,
+    "abbr": "ATL",
+    "name": "Atlanta Hawks",
+    "record": "46-35",
+    "score": 124
+   },
+   "away": {
+    "teamId": 1610612739,
+    "abbr": "CLE",
+    "name": "Cleveland Cavaliers",
+    "record": "51-30",
+    "score": 102
+   }
+  },
+  {
+   "gameId": "0022501174",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-10T23:30:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612738,
+    "abbr": "BOS",
+    "name": "Boston Celtics",
+    "record": "55-26",
+    "score": 144
+   },
+   "away": {
+    "teamId": 1610612740,
+    "abbr": "NOP",
+    "name": "New Orleans Pelicans",
+    "record": "26-55",
+    "score": 118
+   }
+  },
+  {
+   "gameId": "0022501175",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-10T23:30:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612754,
+    "abbr": "IND",
+    "name": "Indiana Pacers",
+    "record": "19-62",
+    "score": 94
+   },
+   "away": {
+    "teamId": 1610612755,
+    "abbr": "PHI",
+    "name": "Philadelphia 76ers",
+    "record": "44-37",
+    "score": 105
+   }
+  },
+  {
+   "gameId": "0022501176",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-10T23:30:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612752,
+    "abbr": "NYK",
+    "name": "New York Knicks",
+    "record": "53-28",
+    "score": 112
+   },
+   "away": {
+    "teamId": 1610612761,
+    "abbr": "TOR",
+    "name": "Toronto Raptors",
+    "record": "45-36",
+    "score": 95
+   }
+  },
+  {
+   "gameId": "0022501177",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T00:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612741,
+    "abbr": "CHI",
+    "name": "Chicago Bulls",
+    "record": "31-50",
+    "score": 103
+   },
+   "away": {
+    "teamId": 1610612753,
+    "abbr": "ORL",
+    "name": "Orlando Magic",
+    "record": "45-36",
+    "score": 127
+   }
+  },
+  {
+   "gameId": "0022501179",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T00:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612749,
+    "abbr": "MIL",
+    "name": "Milwaukee Bucks",
+    "record": "32-49",
+    "score": 125
+   },
+   "away": {
+    "teamId": 1610612751,
+    "abbr": "BKN",
+    "name": "Brooklyn Nets",
+    "record": "20-61",
+    "score": 108
+   }
+  },
+  {
+   "gameId": "0022501180",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T00:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612759,
+    "abbr": "SAS",
+    "name": "San Antonio Spurs",
+    "record": "62-19",
+    "score": 139
+   },
+   "away": {
+    "teamId": 1610612742,
+    "abbr": "DAL",
+    "name": "Dallas Mavericks",
+    "record": "25-56",
+    "score": 120
+   }
+  },
+  {
+   "gameId": "0022501182",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T01:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612743,
+    "abbr": "DEN",
+    "name": "Denver Nuggets",
+    "record": "53-28",
+    "score": 127
+   },
+   "away": {
+    "teamId": 1610612760,
+    "abbr": "OKC",
+    "name": "Oklahoma City Thunder",
+    "record": "64-17",
+    "score": 107
+   }
+  },
+  {
+   "gameId": "0022501178",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T01:30:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612745,
+    "abbr": "HOU",
+    "name": "Houston Rockets",
+    "record": "51-30",
+    "score": 132
+   },
+   "away": {
+    "teamId": 1610612750,
+    "abbr": "MIN",
+    "name": "Minnesota Timberwolves",
+    "record": "48-33",
+    "score": 136
+   }
+  },
+  {
+   "gameId": "0022501181",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T01:30:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612762,
+    "abbr": "UTA",
+    "name": "Utah Jazz",
+    "record": "22-59",
+    "score": 147
+   },
+   "away": {
+    "teamId": 1610612763,
+    "abbr": "MEM",
+    "name": "Memphis Grizzlies",
+    "record": "25-56",
+    "score": 101
+   }
+  },
+  {
+   "gameId": "0022501183",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T02:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612757,
+    "abbr": "POR",
+    "name": "Portland Trail Blazers",
+    "record": "41-40",
+    "score": 116
+   },
+   "away": {
+    "teamId": 1610612746,
+    "abbr": "LAC",
+    "name": "LA Clippers",
+    "record": "41-40",
+    "score": 97
+   }
+  },
+  {
+   "gameId": "0022501184",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T02:00:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612758,
+    "abbr": "SAC",
+    "name": "Sacramento Kings",
+    "record": "22-59",
+    "score": 124
+   },
+   "away": {
+    "teamId": 1610612744,
+    "abbr": "GSW",
+    "name": "Golden State Warriors",
+    "record": "37-44",
+    "score": 118
+   }
+  },
+  {
+   "gameId": "0022501185",
+   "status": 3,
+   "statusText": "Final",
+   "timeUTC": "2026-04-11T02:30:00Z",
+   "label": "",
+   "home": {
+    "teamId": 1610612747,
+    "abbr": "LAL",
+    "name": "Los Angeles Lakers",
+    "record": "52-29",
+    "score": 101
+   },
+   "away": {
+    "teamId": 1610612756,
+    "abbr": "PHX",
+    "name": "Phoenix Suns",
+    "record": "44-37",
+    "score": 73
+   }
+  }
+ ],
+ "starters": {
+  "ATL": {
+   "teamId": 1610612737,
+   "lastGameId": "0022501158",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "ATL @ CLE",
+   "starters": [
+    {
+     "nbaId": 1630700,
+     "name": "Dyson Daniels",
+     "pos": "F",
+     "id": "danielsd4"
+    },
+    {
+     "nbaId": 1630552,
+     "name": "Jalen Johnson",
+     "pos": "F",
+     "id": "johnsonj34"
+    },
+    {
+     "nbaId": 1630168,
+     "name": "Onyeka Okongwu",
+     "pos": "C",
+     "id": "okongwuo6"
+    },
+    {
+     "nbaId": 1629638,
+     "name": "Nickeil Alexander-Walker",
+     "pos": "G",
+     "id": "alexanderwalkern7"
+    },
+    {
+     "nbaId": 203468,
+     "name": "CJ McCollum",
+     "pos": "G",
+     "id": "mccollumc13"
+    }
+   ]
+  },
+  "BKN": {
+   "teamId": 1610612751,
+   "lastGameId": "0022501167",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "BKN vs. IND",
+   "starters": [
+    {
+     "nbaId": 1641869,
+     "name": "Malachi Smith",
+     "pos": "F",
+     "id": "smithm6"
+    },
+    {
+     "nbaId": 1630604,
+     "name": "E.J. Liddell",
+     "pos": "F",
+     "id": "liddelle"
+    },
+    {
+     "nbaId": 1630286,
+     "name": "Trevon Scott",
+     "pos": "C"
+    },
+    {
+     "nbaId": 1630623,
+     "name": "Tyson Etienne",
+     "pos": "G",
+     "id": "etiennet"
+    },
+    {
+     "nbaId": 1642879,
+     "name": "Ben Saraf",
+     "pos": "G",
+     "id": "sarafb"
+    }
+   ]
+  },
+  "BOS": {
+   "teamId": 1610612738,
+   "lastGameId": "0022501168",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "BOS @ NYK",
+   "starters": [
+    {
+     "nbaId": 1630573,
+     "name": "Sam Hauser",
+     "pos": "F",
+     "id": "hausers4"
+    },
+    {
+     "nbaId": 1628369,
+     "name": "Jayson Tatum",
+     "pos": "F",
+     "id": "tatumj9"
+    },
+    {
+     "nbaId": 1629674,
+     "name": "Neemias Queta",
+     "pos": "C",
+     "id": "quetan2"
+    },
+    {
+     "nbaId": 1641775,
+     "name": "Jordan Walsh",
+     "pos": "G",
+     "id": "walshj"
+    },
+    {
+     "nbaId": 1628401,
+     "name": "Derrick White",
+     "pos": "G",
+     "id": "whited10"
+    }
+   ]
+  },
+  "CHA": {
+   "teamId": 1610612766,
+   "lastGameId": "0022501149",
+   "lastGameDate": "2026-04-07",
+   "lastMatchup": "CHA @ BOS",
+   "starters": [
+    {
+     "nbaId": 1642851,
+     "name": "Kon Knueppel",
+     "pos": "F",
+     "id": "knueppelk"
+    },
+    {
+     "nbaId": 1628970,
+     "name": "Miles Bridges",
+     "pos": "F",
+     "id": "bridgesm15"
+    },
+    {
+     "nbaId": 1631217,
+     "name": "Moussa Diabaté",
+     "pos": "C",
+     "id": "diabatm2"
+    },
+    {
+     "nbaId": 1641706,
+     "name": "Brandon Miller",
+     "pos": "G",
+     "id": "millerb16"
+    },
+    {
+     "nbaId": 1630163,
+     "name": "LaMelo Ball",
+     "pos": "G",
+     "id": "balll12"
+    }
+   ]
+  },
+  "CHI": {
+   "teamId": 1610612741,
+   "lastGameId": "0022501166",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "CHI @ WAS",
+   "starters": [
+    {
+     "nbaId": 1630172,
+     "name": "Patrick Williams",
+     "pos": "F",
+     "id": "williamsp6"
+    },
+    {
+     "nbaId": 1631159,
+     "name": "Leonard Miller",
+     "pos": "F",
+     "id": "millerl"
+    },
+    {
+     "nbaId": 1627824,
+     "name": "Guerschon Yabusele",
+     "pos": "C",
+     "id": "yabuseleg2"
+    },
+    {
+     "nbaId": 1629012,
+     "name": "Collin Sexton",
+     "pos": "G",
+     "id": "sextonc7"
+    },
+    {
+     "nbaId": 1630200,
+     "name": "Tre Jones",
+     "pos": "G",
+     "id": "jonest20"
+    }
+   ]
+  },
+  "CLE": {
+   "teamId": 1610612739,
+   "lastGameId": "0022501158",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "CLE vs. ATL",
+   "starters": [
+    {
+     "nbaId": 1629731,
+     "name": "Dean Wade",
+     "pos": "F",
+     "id": "waded22"
+    },
+    {
+     "nbaId": 1630596,
+     "name": "Evan Mobley",
+     "pos": "F",
+     "id": "mobleye5"
+    },
+    {
+     "nbaId": 1628386,
+     "name": "Jarrett Allen",
+     "pos": "C",
+     "id": "allenj10"
+    },
+    {
+     "nbaId": 1628378,
+     "name": "Donovan Mitchell",
+     "pos": "G",
+     "id": "mitchelld14"
+    },
+    {
+     "nbaId": 201935,
+     "name": "James Harden",
+     "pos": "G",
+     "id": "hardenj17"
+    }
+   ]
+  },
+  "DAL": {
+   "teamId": 1610612742,
+   "lastGameId": "0022501164",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "DAL @ PHX",
+   "starters": [
+    {
+     "nbaId": 1642843,
+     "name": "Cooper Flagg",
+     "pos": "F",
+     "id": "flaggc"
+    },
+    {
+     "nbaId": 203114,
+     "name": "Khris Middleton",
+     "pos": "F",
+     "id": "middletonk14"
+    },
+    {
+     "nbaId": 1628963,
+     "name": "Marvin Bagley III",
+     "pos": "C",
+     "id": "iiim6"
+    },
+    {
+     "nbaId": 1631108,
+     "name": "Max Christie",
+     "pos": "G",
+     "id": "christiem4"
+    },
+    {
+     "nbaId": 1642948,
+     "name": "Ryan Nembhard",
+     "pos": "G",
+     "id": "nembhardr"
+    }
+   ]
+  },
+  "DEN": {
+   "teamId": 1610612743,
+   "lastGameId": "0022501162",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "DEN vs. MEM",
+   "starters": [
+    {
+     "nbaId": 1629661,
+     "name": "Cameron Johnson",
+     "pos": "F",
+     "id": "johnsonc10"
+    },
+    {
+     "nbaId": 203932,
+     "name": "Aaron Gordon",
+     "pos": "F",
+     "id": "gordona12"
+    },
+    {
+     "nbaId": 203999,
+     "name": "Nikola Jokić",
+     "pos": "C",
+     "id": "jokin8"
+    },
+    {
+     "nbaId": 1631128,
+     "name": "Christian Braun",
+     "pos": "G",
+     "id": "braunc4"
+    },
+    {
+     "nbaId": 1627750,
+     "name": "Jamal Murray",
+     "pos": "G",
+     "id": "murrayj9"
+    }
+   ]
+  },
+  "DET": {
+   "teamId": 1610612765,
+   "lastGameId": "0022501160",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "DET vs. MIL",
+   "starters": [
+    {
+     "nbaId": 1641709,
+     "name": "Ausar Thompson",
+     "pos": "F",
+     "id": "thompsona6"
+    },
+    {
+     "nbaId": 202699,
+     "name": "Tobias Harris",
+     "pos": "F",
+     "id": "harrist15"
+    },
+    {
+     "nbaId": 1631105,
+     "name": "Jalen Duren",
+     "pos": "C",
+     "id": "durenj4"
+    },
+    {
+     "nbaId": 1629130,
+     "name": "Duncan Robinson",
+     "pos": "G",
+     "id": "robinsond14"
+    },
+    {
+     "nbaId": 1630595,
+     "name": "Cade Cunningham",
+     "pos": "G",
+     "id": "cunninghamc4"
+    }
+   ]
+  },
+  "GSW": {
+   "teamId": 1610612744,
+   "lastGameId": "0022501170",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "GSW vs. LAL",
+   "starters": [
+    {
+     "nbaId": 1630311,
+     "name": "Pat Spencer",
+     "pos": "F",
+     "id": "spencerp"
+    },
+    {
+     "nbaId": 1631466,
+     "name": "Nate Williams",
+     "pos": "F"
+    },
+    {
+     "nbaId": 203110,
+     "name": "Draymond Green",
+     "pos": "C",
+     "id": "greend25"
+    },
+    {
+     "nbaId": 1629001,
+     "name": "De'Anthony Melton",
+     "pos": "G",
+     "id": "meltond7"
+    },
+    {
+     "nbaId": 1641764,
+     "name": "Brandin Podziemski",
+     "pos": "G",
+     "id": "podziemskib3"
+    }
+   ]
+  },
+  "HOU": {
+   "teamId": 1610612745,
+   "lastGameId": "0022501169",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "HOU vs. PHI",
+   "starters": [
+    {
+     "nbaId": 201142,
+     "name": "Kevin Durant",
+     "pos": "F",
+     "id": "durantk18"
+    },
+    {
+     "nbaId": 1631095,
+     "name": "Jabari Smith Jr.",
+     "pos": "F",
+     "id": "jrj11"
+    },
+    {
+     "nbaId": 1630578,
+     "name": "Alperen Sengun",
+     "pos": "C",
+     "id": "senguna5"
+    },
+    {
+     "nbaId": 1629006,
+     "name": "Josh Okogie",
+     "pos": "G",
+     "id": "okogiej7"
+    },
+    {
+     "nbaId": 1641708,
+     "name": "Amen Thompson",
+     "pos": "G",
+     "id": "thompsona5"
+    }
+   ]
+  },
+  "IND": {
+   "teamId": 1610612754,
+   "lastGameId": "0022501167",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "IND @ BKN",
+   "starters": [
+    {
+     "nbaId": 1641771,
+     "name": "Jalen Slawson",
+     "pos": "F"
+    },
+    {
+     "nbaId": 1641716,
+     "name": "Jarace Walker",
+     "pos": "F",
+     "id": "walkerj4"
+    },
+    {
+     "nbaId": 1630695,
+     "name": "Micah Potter",
+     "pos": "C",
+     "id": "potterm2"
+    },
+    {
+     "nbaId": 1630679,
+     "name": "Ethan Thompson",
+     "pos": "G",
+     "id": "thompsone"
+    },
+    {
+     "nbaId": 1631245,
+     "name": "Quenton Jackson",
+     "pos": "G",
+     "id": "jacksonq2"
+    }
+   ]
+  },
+  "LAC": {
+   "teamId": 1610612746,
+   "lastGameId": "0022501163",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "LAC vs. OKC",
+   "starters": [
+    {
+     "nbaId": 202695,
+     "name": "Kawhi Leonard",
+     "pos": "F",
+     "id": "leonardk13"
+    },
+    {
+     "nbaId": 1628381,
+     "name": "John Collins",
+     "pos": "F",
+     "id": "collinsj24"
+    },
+    {
+     "nbaId": 201572,
+     "name": "Brook Lopez",
+     "pos": "C",
+     "id": "lopezb16"
+    },
+    {
+     "nbaId": 1627884,
+     "name": "Derrick Jones Jr.",
+     "pos": "G",
+     "id": "jrd22"
+    },
+    {
+     "nbaId": 1627739,
+     "name": "Kris Dunn",
+     "pos": "G",
+     "id": "dunnk8"
+    }
+   ]
+  },
+  "LAL": {
+   "teamId": 1610612747,
+   "lastGameId": "0022501170",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "LAL @ GSW",
+   "starters": [
+    {
+     "nbaId": 2544,
+     "name": "LeBron James",
+     "pos": "F",
+     "id": "jamesl23"
+    },
+    {
+     "nbaId": 1629060,
+     "name": "Rui Hachimura",
+     "pos": "F",
+     "id": "hachimurar7"
+    },
+    {
+     "nbaId": 1629028,
+     "name": "Deandre Ayton",
+     "pos": "C",
+     "id": "aytond8"
+    },
+    {
+     "nbaId": 1631222,
+     "name": "Jake LaRavia",
+     "pos": "G",
+     "id": "laraviaj3"
+    },
+    {
+     "nbaId": 1628379,
+     "name": "Luke Kennard",
+     "pos": "G",
+     "id": "kennardl9"
+    }
+   ]
+  },
+  "MEM": {
+   "teamId": 1610612763,
+   "lastGameId": "0022501162",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "MEM @ DEN",
+   "starters": [
+    {
+     "nbaId": 1642942,
+     "name": "Jahmai Mashack",
+     "pos": "F",
+     "id": "mashackj"
+    },
+    {
+     "nbaId": 1643253,
+     "name": "Toby Okani",
+     "pos": "F"
+    },
+    {
+     "nbaId": 1641707,
+     "name": "Taylor Hendricks",
+     "pos": "C",
+     "id": "hendrickst2"
+    },
+    {
+     "nbaId": 1642907,
+     "name": "Cedric Coward",
+     "pos": "G",
+     "id": "cowardc"
+    },
+    {
+     "nbaId": 1642383,
+     "name": "Walter Clayton Jr.",
+     "pos": "G",
+     "id": "jrw7"
+    }
+   ]
+  },
+  "MIA": {
+   "teamId": 1610612748,
+   "lastGameId": "0022501165",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "MIA @ TOR",
+   "starters": [
+    {
+     "nbaId": 203952,
+     "name": "Andrew Wiggins",
+     "pos": "F",
+     "id": "wigginsa17"
+    },
+    {
+     "nbaId": 1641796,
+     "name": "Pelle Larsson",
+     "pos": "F",
+     "id": "larssonp2"
+    },
+    {
+     "nbaId": 1628389,
+     "name": "Bam Adebayo",
+     "pos": "C",
+     "id": "adebayob9"
+    },
+    {
+     "nbaId": 1629639,
+     "name": "Tyler Herro",
+     "pos": "G",
+     "id": "herrot7"
+    },
+    {
+     "nbaId": 1630558,
+     "name": "Davion Mitchell",
+     "pos": "G",
+     "id": "mitchelld13"
+    }
+   ]
+  },
+  "MIL": {
+   "teamId": 1610612749,
+   "lastGameId": "0022501160",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "MIL @ DET",
+   "starters": [
+    {
+     "nbaId": 1631172,
+     "name": "Ousmane Dieng",
+     "pos": "F",
+     "id": "diengo2"
+    },
+    {
+     "nbaId": 1627752,
+     "name": "Taurean Prince",
+     "pos": "F",
+     "id": "princet23"
+    },
+    {
+     "nbaId": 1630579,
+     "name": "Jericho Sims",
+     "pos": "C",
+     "id": "simsj4"
+    },
+    {
+     "nbaId": 1631260,
+     "name": "AJ Green",
+     "pos": "G",
+     "id": "greena7"
+    },
+    {
+     "nbaId": 1631157,
+     "name": "Ryan Rollins",
+     "pos": "G",
+     "id": "rollinsr2"
+    }
+   ]
+  },
+  "MIN": {
+   "teamId": 1610612750,
+   "lastGameId": "0022501159",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "MIN @ ORL",
+   "starters": [
+    {
+     "nbaId": 1630183,
+     "name": "Jaden McDaniels",
+     "pos": "F",
+     "id": "mcdanielsj10"
+    },
+    {
+     "nbaId": 203937,
+     "name": "Kyle Anderson",
+     "pos": "F",
+     "id": "andersonk20"
+    },
+    {
+     "nbaId": 1629675,
+     "name": "Naz Reid",
+     "pos": "C",
+     "id": "reidn7"
+    },
+    {
+     "nbaId": 204060,
+     "name": "Joe Ingles",
+     "pos": "G",
+     "id": "inglesj10"
+    },
+    {
+     "nbaId": 1628978,
+     "name": "Donte DiVincenzo",
+     "pos": "G",
+     "id": "divincenzod8"
+    }
+   ]
+  },
+  "NOP": {
+   "teamId": 1610612740,
+   "lastGameId": "0022501153",
+   "lastGameDate": "2026-04-07",
+   "lastMatchup": "NOP vs. UTA",
+   "starters": [
+    {
+     "nbaId": 1642877,
+     "name": "Micah Peavy",
+     "pos": "F",
+     "id": "peavym"
+    },
+    {
+     "nbaId": 1642852,
+     "name": "Derik Queen",
+     "pos": "F",
+     "id": "queend"
+    },
+    {
+     "nbaId": 1626172,
+     "name": "Kevon Looney",
+     "pos": "C",
+     "id": "looneyk10"
+    },
+    {
+     "nbaId": 1629673,
+     "name": "Jordan Poole",
+     "pos": "G",
+     "id": "poolej7"
+    },
+    {
+     "nbaId": 1642847,
+     "name": "Jeremiah Fears",
+     "pos": "G",
+     "id": "fearsj"
+    }
+   ]
+  },
+  "NYK": {
+   "teamId": 1610612752,
+   "lastGameId": "0022501168",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "NYK vs. BOS",
+   "starters": [
+    {
+     "nbaId": 1628384,
+     "name": "OG Anunoby",
+     "pos": "F",
+     "id": "anunobyo9"
+    },
+    {
+     "nbaId": 1628404,
+     "name": "Josh Hart",
+     "pos": "F",
+     "id": "hartj13"
+    },
+    {
+     "nbaId": 1626157,
+     "name": "Karl-Anthony Towns",
+     "pos": "C",
+     "id": "townsk11"
+    },
+    {
+     "nbaId": 1628969,
+     "name": "Mikal Bridges",
+     "pos": "G",
+     "id": "bridgesm14"
+    },
+    {
+     "nbaId": 1628973,
+     "name": "Jalen Brunson",
+     "pos": "G",
+     "id": "brunsonj8"
+    }
+   ]
+  },
+  "OKC": {
+   "teamId": 1610612760,
+   "lastGameId": "0022501163",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "OKC @ LAC",
+   "starters": [
+    {
+     "nbaId": 1631114,
+     "name": "Jalen Williams",
+     "pos": "F",
+     "id": "williamsj36"
+    },
+    {
+     "nbaId": 1631096,
+     "name": "Chet Holmgren",
+     "pos": "F",
+     "id": "holmgrenc3"
+    },
+    {
+     "nbaId": 1628392,
+     "name": "Isaiah Hartenstein",
+     "pos": "C",
+     "id": "hartensteini6"
+    },
+    {
+     "nbaId": 1629652,
+     "name": "Luguentz Dort",
+     "pos": "G",
+     "id": "dortl7"
+    },
+    {
+     "nbaId": 1628983,
+     "name": "Shai Gilgeous-Alexander",
+     "pos": "G",
+     "id": "gilgeousalexanders6"
+    }
+   ]
+  },
+  "ORL": {
+   "teamId": 1610612753,
+   "lastGameId": "0022501159",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "ORL vs. MIN",
+   "starters": [
+    {
+     "nbaId": 1630532,
+     "name": "Franz Wagner",
+     "pos": "F",
+     "id": "wagnerf5"
+    },
+    {
+     "nbaId": 1631094,
+     "name": "Paolo Banchero",
+     "pos": "F",
+     "id": "bancherop4"
+    },
+    {
+     "nbaId": 1628976,
+     "name": "Wendell Carter Jr.",
+     "pos": "C",
+     "id": "jrw8"
+    },
+    {
+     "nbaId": 1630217,
+     "name": "Desmond Bane",
+     "pos": "G",
+     "id": "baned6"
+    },
+    {
+     "nbaId": 1630591,
+     "name": "Jalen Suggs",
+     "pos": "G",
+     "id": "suggsj5"
+    }
+   ]
+  },
+  "PHI": {
+   "teamId": 1610612755,
+   "lastGameId": "0022501169",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "PHI @ HOU",
+   "starters": [
+    {
+     "nbaId": 1626162,
+     "name": "Kelly Oubre Jr.",
+     "pos": "F",
+     "id": "jrk15"
+    },
+    {
+     "nbaId": 202331,
+     "name": "Paul George",
+     "pos": "F",
+     "id": "georgep15"
+    },
+    {
+     "nbaId": 1641737,
+     "name": "Adem Bona",
+     "pos": "C",
+     "id": "bonaa2"
+    },
+    {
+     "nbaId": 1642845,
+     "name": "VJ Edgecombe",
+     "pos": "G",
+     "id": "edgecombev"
+    },
+    {
+     "nbaId": 1630178,
+     "name": "Tyrese Maxey",
+     "pos": "G",
+     "id": "maxeyt6"
+    }
+   ]
+  },
+  "PHX": {
+   "teamId": 1610612756,
+   "lastGameId": "0022501164",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "PHX vs. DAL",
+   "starters": [
+    {
+     "nbaId": 1630692,
+     "name": "Jordan Goodwin",
+     "pos": "F",
+     "id": "goodwinj4"
+    },
+    {
+     "nbaId": 1628415,
+     "name": "Dillon Brooks",
+     "pos": "F",
+     "id": "brooksd9"
+    },
+    {
+     "nbaId": 1642863,
+     "name": "Khaman Maluach",
+     "pos": "C"
+    },
+    {
+     "nbaId": 1630224,
+     "name": "Jalen Green",
+     "pos": "G",
+     "id": "greenj38"
+    },
+    {
+     "nbaId": 1626164,
+     "name": "Devin Booker",
+     "pos": "G",
+     "id": "bookerd11"
+    }
+   ]
+  },
+  "POR": {
+   "teamId": 1610612757,
+   "lastGameId": "0022501161",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "POR @ SAS",
+   "starters": [
+    {
+     "nbaId": 1630166,
+     "name": "Deni Avdija",
+     "pos": "F",
+     "id": "avdijad6"
+    },
+    {
+     "nbaId": 1641739,
+     "name": "Toumani Camara",
+     "pos": "F",
+     "id": "camarat3"
+    },
+    {
+     "nbaId": 1642270,
+     "name": "Donovan Clingan",
+     "pos": "C",
+     "id": "clingand2"
+    },
+    {
+     "nbaId": 201950,
+     "name": "Jrue Holiday",
+     "pos": "G",
+     "id": "holidayj26"
+    },
+    {
+     "nbaId": 1630703,
+     "name": "Scoot Henderson",
+     "pos": "G",
+     "id": "hendersons3"
+    }
+   ]
+  },
+  "SAC": {
+   "teamId": 1610612758,
+   "lastGameId": "0022501154",
+   "lastGameDate": "2026-04-07",
+   "lastMatchup": "SAC @ GSW",
+   "starters": [
+    {
+     "nbaId": 1631342,
+     "name": "Daeqwon Plowden",
+     "pos": "F",
+     "id": "plowdend"
+    },
+    {
+     "nbaId": 1630173,
+     "name": "Precious Achiuwa",
+     "pos": "F",
+     "id": "achiuwap6"
+    },
+    {
+     "nbaId": 1642875,
+     "name": "Maxime Raynaud",
+     "pos": "C",
+     "id": "raynaudm"
+    },
+    {
+     "nbaId": 1642363,
+     "name": "Nique Clifford",
+     "pos": "G",
+     "id": "cliffordn"
+    },
+    {
+     "nbaId": 1642269,
+     "name": "Devin Carter",
+     "pos": "G",
+     "id": "carterd"
+    }
+   ]
+  },
+  "SAS": {
+   "teamId": 1610612759,
+   "lastGameId": "0022501161",
+   "lastGameDate": "2026-04-08",
+   "lastMatchup": "SAS vs. POR",
+   "starters": [
+    {
+     "nbaId": 1630170,
+     "name": "Devin Vassell",
+     "pos": "F",
+     "id": "vasselld6"
+    },
+    {
+     "nbaId": 1630577,
+     "name": "Julian Champagnie",
+     "pos": "F",
+     "id": "champagniej6"
+    },
+    {
+     "nbaId": 1628436,
+     "name": "Luke Kornet",
+     "pos": "C",
+     "id": "kornetl6"
+    },
+    {
+     "nbaId": 1642844,
+     "name": "Dylan Harper",
+     "pos": "G",
+     "id": "harperd4"
+    },
+    {
+     "nbaId": 1628368,
+     "name": "De'Aaron Fox",
+     "pos": "G",
+     "id": "foxd9"
+    }
+   ]
+  },
+  "TOR": {
+   "teamId": 1610612761,
+   "lastGameId": "0022501165",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "TOR vs. MIA",
+   "starters": [
+    {
+     "nbaId": 1627742,
+     "name": "Brandon Ingram",
+     "pos": "F",
+     "id": "ingramb10"
+    },
+    {
+     "nbaId": 1630567,
+     "name": "Scottie Barnes",
+     "pos": "F",
+     "id": "barness5"
+    },
+    {
+     "nbaId": 1627751,
+     "name": "Jakob Poeltl",
+     "pos": "C",
+     "id": "poeltlj9"
+    },
+    {
+     "nbaId": 1629628,
+     "name": "RJ Barrett",
+     "pos": "G",
+     "id": "barrettr7"
+    },
+    {
+     "nbaId": 1630193,
+     "name": "Immanuel Quickley",
+     "pos": "G",
+     "id": "quickleyi6"
+    }
+   ]
+  },
+  "UTA": {
+   "teamId": 1610612762,
+   "lastGameId": "0022501153",
+   "lastGameDate": "2026-04-07",
+   "lastMatchup": "UTA @ NOP",
+   "starters": [
+    {
+     "nbaId": 1642262,
+     "name": "Cody Williams",
+     "pos": "F",
+     "id": "williamsc3"
+    },
+    {
+     "nbaId": 1631131,
+     "name": "Oscar Tshiebwe",
+     "pos": "F",
+     "id": "tshiebweo"
+    },
+    {
+     "nbaId": 1642271,
+     "name": "Kyle Filipowski",
+     "pos": "C",
+     "id": "filipowskik2"
+    },
+    {
+     "nbaId": 1643016,
+     "name": "Bez Mbeng",
+     "pos": "G",
+     "id": "mbengb"
+    },
+    {
+     "nbaId": 1641729,
+     "name": "Brice Sensabaugh",
+     "pos": "G",
+     "id": "sensabaughb3"
+    }
+   ]
+  },
+  "WAS": {
+   "teamId": 1610612764,
+   "lastGameId": "0022501166",
+   "lastGameDate": "2026-04-09",
+   "lastMatchup": "WAS vs. CHI",
+   "starters": [
+    {
+     "nbaId": 1641778,
+     "name": "Leaky Black",
+     "pos": "F",
+     "id": "blackl"
+    },
+    {
+     "nbaId": 1630264,
+     "name": "Anthony Gill",
+     "pos": "F",
+     "id": "gilla"
+    },
+    {
+     "nbaId": 1642882,
+     "name": "Julian Reese",
+     "pos": "C"
+    },
+    {
+     "nbaId": 1642860,
+     "name": "Will Riley",
+     "pos": "G",
+     "id": "rileyw"
+    },
+    {
+     "nbaId": 1642267,
+     "name": "Bub Carrington",
+     "pos": "G",
+     "id": "carringtonb2"
+    }
+   ]
+  }
+ },
+ "yesterday": {
+  "date": "2026-04-09",
+  "games": [
+   {
+    "gameId": "0022501165",
+    "kind": "Regular Season",
+    "home": {
+     "abbr": "TOR",
+     "pts": 128
+    },
+    "away": {
+     "abbr": "MIA",
+     "pts": 114
+    },
+    "winner": "TOR"
+   },
+   {
+    "gameId": "0022501166",
+    "kind": "Regular Season",
+    "home": {
+     "abbr": "WAS",
+     "pts": 108
+    },
+    "away": {
+     "abbr": "CHI",
+     "pts": 119
+    },
+    "winner": "CHI"
+   },
+   {
+    "gameId": "0022501167",
+    "kind": "Regular Season",
+    "home": {
+     "abbr": "BKN",
+     "pts": 94
+    },
+    "away": {
+     "abbr": "IND",
+     "pts": 123
+    },
+    "winner": "IND"
+   },
+   {
+    "gameId": "0022501168",
+    "kind": "Regular Season",
+    "home": {
+     "abbr": "NYK",
+     "pts": 112
+    },
+    "away": {
+     "abbr": "BOS",
+     "pts": 106
+    },
+    "winner": "NYK"
+   },
+   {
+    "gameId": "0022501169",
+    "kind": "Regular Season",
+    "home": {
+     "abbr": "HOU",
+     "pts": 113
+    },
+    "away": {
+     "abbr": "PHI",
+     "pts": 102
+    },
+    "winner": "HOU"
+   },
+   {
+    "gameId": "0022501170",
+    "kind": "Regular Season",
+    "home": {
+     "abbr": "GSW",
+     "pts": 103
+    },
+    "away": {
+     "abbr": "LAL",
+     "pts": 119
+    },
+    "winner": "LAL"
+   }
+  ]
+ }
+}
