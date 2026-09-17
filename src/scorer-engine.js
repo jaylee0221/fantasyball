@@ -52,7 +52,11 @@ function bestFromPacks(packs){ if(!packs||packs.length<5) return null;
   const legal=f=>f.reduce((a,p)=>a+price(p),0)<=CAP;
   const arrange=f=>f.length<5?f:bestLineup(f).map(id=>E.P[id]);
   const cands=packs.map(pk=>pk.players.filter(p=>p.capPct!=null));
-  let five=[]; for(const c of cands){ let best=null,bv=-1e9; for(const p of c){ const f=five.concat([p]); if(!legal(f)) continue; const g=f.slice(); while(g.length<5) g.push(g[g.length-1]); const v=E.rate(g).net; if(v>bv){bv=v;best=p;} } if(best) five.push(best); }
+  if(cands.some(c=>!c.length)) return null;
+  /* spend greedily but keep the cheapest man in every later pack affordable, or the five never gets filled */
+  const mins=cands.map(c=>Math.min(...c.map(price)));
+  let five=[]; for(let i=0;i<cands.length;i++){ const rest=mins.slice(i+1).reduce((a,b)=>a+b,0); let best=null,bv=-1e9;
+    for(const p of cands[i]){ const f=five.concat([p]); if(f.reduce((a,q)=>a+price(q),0)+rest>CAP) continue; const g=f.slice(); while(g.length<5) g.push(g[g.length-1]); const v=E.rate(g).net; if(v>bv){bv=v;best=p;} } if(best) five.push(best); }
   if(five.length<5) return null;
   let cur=five, cv=fiveNet(arrange(cur)), improved=true, guard=0;
   while(improved&&guard++<30){ improved=false; for(let i=0;i<5;i++) for(const p of cands[i]){ if(p.id===cur[i].id) continue; const f=cur.slice(); f[i]=p; if(!legal(f)) continue; const v=fiveNet(arrange(f)); if(v>cv+1e-6){ cur=f; cv=v; improved=true; } } }

@@ -1050,8 +1050,12 @@ function startSeason(){ const five=S.team.map(id=>PID[id]); S.season=SCORER.play
   S.tab='season'; S.view=null; save(); render(); }
 const SAMPLE=FIELD.filter((_,i)=>i%Math.max(1,Math.floor(FIELD.length/120))===0).slice(0,120);
 function expW(five){ let w=0; for(const x of SAMPLE){ const H=h2h(five,x.five); if(H.wa>H.wb) w++; } return Math.round(82*w/SAMPLE.length); }
-function bestFromPacks(packs){ if(!packs||packs.length<5) return null; const cands=packs.map(pk=>pk.players); const legal=f=>f.reduce((a,p)=>a+price(p),0)<=CAP;
-  let five=[]; for(const c of cands){ let bp=null; for(const p of c){ const f=five.concat([p]); if(!legal(f)) continue; if(!bp||valueOf(p)>valueOf(bp)) bp=p; } if(bp) five.push(bp); } if(five.length<5) return null;
+function bestFromPacks(packs){ if(!packs||packs.length<5) return null; const legal=f=>f.reduce((a,p)=>a+price(p),0)<=CAP;
+  const cands=packs.map(pk=>pk.players.filter(p=>p.capPct!=null)); if(cands.some(c=>!c.length)) return null;
+  /* spend greedily but keep the cheapest man in every later pack affordable, or the five never gets filled */
+  const mins=cands.map(c=>Math.min(...c.map(price)));
+  let five=[]; for(let i=0;i<cands.length;i++){ const rest=mins.slice(i+1).reduce((a,b)=>a+b,0); let bp=null;
+    for(const p of cands[i]){ const spend=five.reduce((a,q)=>a+price(q),0)+price(p); if(spend+rest>CAP) continue; if(!bp||valueOf(p)>valueOf(bp)) bp=p; } if(bp) five.push(bp); } if(five.length<5) return null;
   let cur=five, cv=expW(cur), imp=true, g=0; while(imp&&g++<8){ imp=false; for(let i=0;i<5;i++) for(const p of cands[i]){ if(p.id===cur[i].id) continue; const f=cur.slice(); f[i]=p; if(!legal(f)) continue; const v=expW(f); if(v>cv){cur=f;cv=v;imp=true;} } }
   return {five:cur,ew:cv}; }
 
