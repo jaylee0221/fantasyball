@@ -82,7 +82,7 @@ function lineOf(r){ return `${fmt(r.pts)}p ${fmt(r.reb)}r ${fmt(r.ast)}a · ${fm
 const fv=v=>(v>=0?'+':'−')+fmt(Math.abs(v),1);
 
 function dock(){ const five=S.five.map(id=>PID[id]).filter(Boolean); if(!five.length) return ''; const cost=five.reduce((a,p)=>a+(price(p)||0),0); const unpriced=five.filter(p=>price(p)==null).length;
-  return `<div class="dock"><div class="cap"><span>My five · ${five.length} of 5${unpriced?` · ${unpriced} unpriced`:''}</span><b>$${cost}M</b></div>
+  return `<div class="dock"><div class="cap"><span>My five · ${five.length} of 5${unpriced?` · ${unpriced} unpriced`:''} · $${CAP}M cap</span><b class="${CAP-cost<0?'over':''}">$${CAP-cost}M left</b></div>
     <div class="five5">${[0,1,2,3,4].map(i=>{const p=five[i]; return p?`<div class="f5 on" data-player="${p.id}"><i>${p.pos}</i><b>${last(p)}</b><em>${short2(p.s).slice(0,3)}</em></div>`:'<div class="f5"><i>·</i><b class="open">open</b></div>';}).join('')}</div>
     ${five.length===5?`<button class="big-cta" data-matchup>Matchup</button>`:''}</div>`; }
 function searchResults(){ const q=S.q.trim().toLowerCase(); if(q.length<2) return ''; const names={}; for(const p of D.players){ if(p.n.toLowerCase().includes(q)) (names[p.n]=names[p.n]||[]).push(p); }
@@ -98,17 +98,19 @@ function viewHistory(){ const all=S.season==='all'; const rows=ranked(S.season,S
     <div class="rank">${rows.map((r,i)=>`<div class="rk ${i===0?'one':''} ${S.five.includes(r.x.p.id)?'mine':''}" data-player="${r.x.p.id}"><i>${i+1}</i><div><div class="nm">${r.x.p.n}${i===0?`<span class="pill king">${all?'GOAT':'King of '+short2(S.season).slice(0,3)}</span>`:''}</div><div class="ln">${r.x.p.t} ${short2(r.x.p.s)} · ${lineOf(r.x.r)}</div></div><b>${PRESETS[S.preset].points?fmt(r.v,1):fv(r.v)}</b></div>`).join('')}</div>
     <p class="line">${PRESETS[S.preset].points?'Fantasy points per game: PTS + 1.2 REB + 1.5 AST + 3 STL + 3 BLK − TO.':'Value = sum of category z-scores among men with 20+ minutes and 40+ games; FG% and FT% weighted by volume.'}</p>`}</div>${dock()}`; }
 
-function playerSheet(id){ const p=D.players.find(q=>q.id===id); if(!p) return ''; const x=rowOf(p); if(!x) return ''; const tm=teamOf(p); const v=value(x,S.preset); const rank=rankOf(id,S.preset);
+function playerSheet(id,opts={}){ const p=D.players.find(q=>q.id===id); if(!p) return ''; const x=rowOf(p); if(!x) return ''; const tm=teamOf(p); const v=value(x,S.preset); const rank=rankOf(id,S.preset);
   const car=careerOf(p.n,S.preset); const vmax=Math.max(...car.map(c=>c.v)), vmin=Math.min(...car.map(c=>c.v)); const h=c=>8+(vmax>vmin?(c.v-vmin)/(vmax-vmin):1)*84;
   const kings=car.filter(c=>c.rank===1).map(c=>short2(c.s).slice(0,3));
   const inFive=S.five.includes(id);
   return `<div class="sheet ps" style="--c1:${tm.c1}"><div class="psbody"><div class="grab"></div>
-    <div class="ph"><div class="r1"><span>${tm.team}</span><span>${short2(p.s)}</span></div><div class="first">${first(p)}</div><div class="r2"><b>${last(p)}</b><b class="z">${PRESETS[S.preset].points?fmt(v,1):fv(v)}</b></div></div>
+    <div class="ph"><div class="r1"><span>${tm.team}</span><span>${short2(p.s)}</span></div><div class="first">${first(p)}</div><div class="r2"><b>${last(p)}</b>${opts.readOnly?`<b class="z" style="font-size:31px">${p.cap!=null?'$'+Math.round(p.cap*100)+'M':''}</b>`:`<b class="z">${PRESETS[S.preset].points?fmt(v,1):fv(v)}</b>`}</div></div>
     <div class="line">${rank?`<span class="pill ${rank===1?'king':''}">${rank===1?'King of '+short2(p.s).slice(0,3):'#'+rank+' of '+short2(p.s).slice(0,3)}</span>`:'<span class="pill">bench minutes</span>'}${kings.length?` <span class="pill king">${kings.length} time${kings.length>1?'s':''} king</span>`:''} ${lineOf(x.r)} · ${p.gp} GP · ${fmt(p.min)} min</div>
+    ${opts.extra||''}
     <div class="career"><h2>Fantasy rank by season<span>${PRESETS[S.preset].name}</span></h2><div class="bars2">${car.map(c=>`<div class="${c.rank===1?'king':c.rank<=5?'top5':''} ${c.s===p.s?'now':''}" style="height:${h(c).toFixed(0)}px" data-player="${c.x.p.id}"><em>#${c.rank}</em><span>${short2(c.s).slice(0,3)}</span><u>${c.x.p.t}</u></div>`).join('')}</div></div>
     <div class="cats"><h2>${PRESETS[S.preset].points?'Per game':'9 categories · '+short2(p.s)}<span>${PRESETS[S.preset].points?'':'z vs league'}</span></h2>
       ${CATS.map(c=>{const z=x.z[c]; const val=c==='fgp'?Math.round(x.r.fgpct*100)+'%':c==='ftp'?Math.round(x.r.ftpct*100)+'%':fmt(x.r[c]); return `<div class="cr"><span class="l">${CAT_LABEL[c]}</span><div class="bar"><u></u><i class="${z<0?'neg':''}" style="left:${z>=0?50:Math.max(2,50+z*12)}%;width:${Math.min(48,Math.abs(z)*12)}%"></i></div><span class="v">${val}</span><span class="zz ${z>=1?'plus':''}">${fv(z)}</span></div>`;}).join('')}</div>
-    <div class="psfoot">${inFive?`<button class="g2 wide" data-drop="${id}">Drop from my five</button>`:S.five.length>=5?(S.swapFor===id?`<div class="kick" style="margin-bottom:8px">Swap ${last(p)} in for…</div><div class="five5" style="margin:0 0 8px">${S.five.map(fid=>{const q=PID[fid]; return `<div class="f5 on" data-swap-out="${fid}" data-swap-in="${id}"><i>${q.pos}</i><b>${last(q)}</b><em>${short2(q.s).slice(0,3)}</em></div>`;}).join('')}</div>`:`<button class="g2 wide" data-swap="${id}">Swap into my five</button>`):`<button class="g2 hot wide" data-add="${id}">Add to my five${price(p)!=null?' · $'+price(p)+'M':''}</button>`}</div></div></div>`; }
+    ${(()=>{ const cost=S.five.map(fid=>price(PID[fid])||0).reduce((a,b)=>a+b,0); const mine=price(p)||0; const over=cost+mine-CAP; S._over=over; return ''; })()}
+    <div class="psfoot">${opts.foot!=null?opts.foot:inFive?`<button class="g2 wide" data-drop="${id}">Drop from my five</button>`:S.five.length>=5?(S.swapFor===id?`<div class="kick" style="margin-bottom:8px">Swap ${last(p)} in for…</div><div class="five5" style="margin:0 0 8px">${S.five.map(fid=>{const q=PID[fid]; const cost=S.five.map(x=>price(PID[x])||0).reduce((a,b)=>a+b,0)-(price(q)||0)+(price(p)||0); const okc=cost<=CAP; return `<div class="f5 ${okc?'on':'no'}" ${okc?`data-swap-out="${fid}" data-swap-in="${id}"`:''}><i>${q.pos}</i><b>${last(q)}</b><em>${okc?'$'+cost+'M':'over'}</em></div>`;}).join('')}</div>`:`<button class="g2 wide" data-swap="${id}">Swap into my five</button>`):(S._over>0?`<button class="g2 wide" disabled>Over the cap by $${S._over}M</button>`:`<button class="g2 hot wide" data-add="${id}">Add to my five${price(p)!=null?' · $'+price(p)+'M':''}</button>`)}</div></div></div>`; }
 
 function viewBuild(){ const five=S.five.map(id=>D.players.find(p=>p.id===id)).filter(Boolean); const cost=five.reduce((a,p)=>a+(price(p)||0),0); const unpriced=five.filter(p=>price(p)==null).length;
   const q=S.q.trim().toLowerCase(); let results='';
@@ -180,7 +182,7 @@ document.addEventListener('click',e=>{ if(!HOST.contains(e.target)) return; cons
   if(el=c('[data-season]')){ S.season=el.dataset.season; save(); render(); return; }
   if(el=c('[data-player]')){ S.sheet={kind:'player',id:el.dataset.player}; render(); return; }
   if(el=c('[data-seasons]')){ S.pick=el.dataset.seasons?decodeURIComponent(el.dataset.seasons):null; S.qFocus=false; render(); return; }
-  if(el=c('[data-add]')){ if(S.five.length<5&&!S.five.includes(el.dataset.add)) S.five.push(el.dataset.add); S.sheet=null; S.pick=null; S.q=''; save(); S.tab='history'; S.view=null; render(); return; }
+  if(el=c('[data-add]')){ const cost=S.five.map(fid=>price(PID[fid])||0).reduce((a,b)=>a+b,0)+(price(PID[el.dataset.add])||0); if(cost>CAP){ return; } if(S.five.length<5&&!S.five.includes(el.dataset.add)) S.five.push(el.dataset.add); S.sheet=null; S.pick=null; S.q=''; save(); S.tab='history'; S.view=null; render(); return; }
   if(el=c('[data-drop]')){ S.five=S.five.filter(id=>id!==el.dataset.drop); S.sheet=null; save(); render(); return; }
   if(el=c('[data-swap-out]')){ const i=S.five.indexOf(el.dataset.swapOut); if(i>=0) S.five[i]=el.dataset.swapIn; S.swapFor=null; S.sheet=null; save(); S.tab='history'; S.view=null; render(); return; }
   if(el=c('[data-swap]')){ S.swapFor=el.dataset.swap; render(); return; }
@@ -196,5 +198,5 @@ document.addEventListener('click',e=>{ if(!HOST.contains(e.target)) return; cons
   document.addEventListener('touchend',e=>{ if(y0==null) return; const dy=e.changedTouches[0].clientY-y0; if(sc<=0&&dy>90&&S.sheet){ S.sheet=null; render(); } y0=null; },{passive:true}); })();
 
 
-window.__build={S,D,render,vsField,h2h,rowOf,value,ranked,init(){ load(); render(); }};
+window.__build={S,D,render,vsField,h2h,rowOf,value,ranked,rankOf,playerSheet,init(){ load(); render(); }};
 })();
